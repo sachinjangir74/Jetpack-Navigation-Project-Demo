@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Jetpack-Navigation-Demo</string>
+    <string name="home_fragment">Home fragment</string>
+    <string name="splash_fragment">Splash fragment</string>
+    <string name="login_fragment">Login fragment</string>
+    <string name="animation_fragment">Animation fragment</string>
+    <string name="img_logo">img_logo</string>
+
+    <string name="sign_up_with_email">Sign up with email</string>
+    <string name="new_user">New User?</string>
+    <string name="already_have_profile">Already have profile?</string>
+    <string name="login">Login</string>
+    <string name="forgotten_log_in_details">Forgotten log-in details</string>
+    <string name="email">Email</string>
+    <string name="sign_in">Sign in!</string>
+    <string name="password">Password</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="forgot_password"><u>Forgot password</u></string>
+    <string name="back">Back</string>
+
+</resources>

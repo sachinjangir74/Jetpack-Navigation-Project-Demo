@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/activity_horizontal_margin"
+        tools:context=".ui.login.LoginFragment">
+
+        <TextView
+            android:id="@+id/txt_new_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_16"
+            android:layout_marginTop="@dimen/size_40"
+            android:layout_marginRight="@dimen/size_16"
+            android:gravity="center_horizontal"
+            android:text="@string/sign_in"
+            android:textColor="@color/colorHint"
+            android:textSize="@dimen/font_28"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_16"
+            android:layout_marginTop="@dimen/size_40"
+            android:layout_marginRight="@dimen/size_16"
+            android:text="@string/email"
+            android:textColor="@color/colorHint"
+            android:textSize="@dimen/font_16"
+            app:layout_constraintTop_toBottomOf="@id/txt_new_sign_in" />
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_5"
+            android:autofillHints="false"
+            android:background="@drawable/round_gray_border"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:maxLength="120"
+            android:minHeight="48dp"
+            android:paddingHorizontal="@dimen/size_16"
+            android:paddingVertical="@dimen/size_12"
+            android:textColor="@color/colorZBlack"
+            android:textColorHint="@color/colorHint"
+            android:textSize="@dimen/font_16"
+            app:layout_constraintTop_toBottomOf="@id/txt_email"
+            tools:ignore="DuplicateSpeakableTextCheck"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <TextView
+            android:id="@+id/txt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_16"
+            android:layout_marginTop="@dimen/size_16"
+            android:layout_marginRight="@dimen/size_16"
+            android:text="@string/password"
+            android:textColor="@color/colorHint"
+            android:textSize="@dimen/font_16"
+            app:layout_constraintTop_toBottomOf="@id/edt_email" />
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_5"
+            android:autofillHints="false"
+            android:background="@drawable/round_gray_border"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:maxLength="60"
+            android:minHeight="@dimen/size_48"
+            android:paddingHorizontal="@dimen/size_16"
+            android:paddingVertical="@dimen/size_12"
+            android:textColor="@color/colorZBlack"
+            android:textColorHint="@color/colorHint"
+            android:textSize="@dimen/font_16"
+            app:layout_constraintTop_toBottomOf="@id/txt_password"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <CheckBox
+            android:id="@+id/check_remember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_5"
+            android:padding="@dimen/size_5"
+            android:text="@string/remember_me"
+            android:textColor="@color/colorHint"
+            android:textSize="@dimen/font_16"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/edt_password"
+            app:layout_constraintTop_toBottomOf="@id/edt_password" />
+
+        <TextView
+            android:id="@+id/txt_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_16"
+            android:text="@string/forgot_password"
+            android:textColor="@color/colorHint"
+            android:textSize="@dimen/font_16"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/edt_password"
+            app:layout_constraintTop_toBottomOf="@id/edt_password" />
+
+        <Button
+            android:id="@+id/btn_log_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_16"
+            android:layout_marginTop="@dimen/size_40"
+            android:layout_marginRight="@dimen/size_16"
+            android:background="@drawable/round_primary_btn"
+            android:gravity="center_horizontal"
+            android:paddingHorizontal="@dimen/size_100"
+            android:paddingVertical="@dimen/size_10"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_18"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/edt_password"
+            app:layout_constraintLeft_toLeftOf="@+id/edt_password"
+            app:layout_constraintRight_toRightOf="@+id/edt_password"
+            app:layout_constraintStart_toStartOf="@+id/edt_password"
+            app:layout_constraintTop_toBottomOf="@id/check_remember" />
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
