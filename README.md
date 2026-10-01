@@ -1,9 +1,14 @@
-# Jetpack Navigation Demo
+﻿# Jetpack Navigation Demo
 
-A modern Android application demonstrating Jetpack Navigation, Fragments, Data Binding, Safe Args, MVVM architecture, and XML-based UI development.
+A Kotlin-based Android application built with XML layouts and Fragments, demonstrating AndroidX Navigation, Data Binding, screen-to-screen data passing, animations, and back-stack navigation.
+
+## Overview
+
+This project demonstrates a structured multi-screen Android application using the Navigation Component and the traditional Views and Fragments approach. It includes a complete navigation flow from a splash screen to login, home, and animation screens, with Data Binding and XML-based UI throughout.
 
 ## Tech Stack
-- Kotlin 2.4.20
+
+- Kotlin
 - Android Gradle Plugin 9.4.0
 - Gradle 9.6.0
 - Android SDK 37
@@ -14,30 +19,64 @@ A modern Android application demonstrating Jetpack Navigation, Fragments, Data B
 - Data Binding
 - Material Components
 - ConstraintLayout
-- Kotlin Coroutines
+- XML Layouts
+- Fragments
 
-## Features
-- Splash screen navigation
-- Login screen with validation
-- Jetpack Navigation Component
-- Safe Args for type-safe argument passing
-- Data passing between fragments
-- Data Binding
-- MVVM-oriented architecture
-- Fragment animations
+## Key Features
+
+- Splash screen navigation flow
+- Login screen with input validation
+- Navigation Component with navigation graph
+- Fragment-to-fragment navigation
+- Data passing between destinations
+- XML Data Binding
+- Fragment animations and transitions
 - Back-stack navigation
+- Material-based UI components
+- AndroidX lifecycle integration
 
 ## Navigation Flow
+
 Splash Screen -> Login -> Home -> Animation Fragment
-Back navigation: Animation Fragment -> Home
 
-## Build
-On Windows: .\gradlew.bat assembleDebug
+Back Navigation: Animation Fragment -> Home
 
-## Package
-com.sachin.jetpack_navigation_demo
+## Project Structure
+
+```text
+app/
+├── src/main/java/com/sachin/jetpack_navigation_demo/
+│   └── ui/
+│       ├── MainActivity.kt
+│       ├── splash/
+│       ├── login/
+│       ├── home/
+│       └── animation/
+│
+├── src/main/res/
+│   ├── layout/
+│   ├── navigation/
+│   ├── drawable/
+│   └── values/
+│
+└── app/build.gradle
+```
+
+## What This Project Demonstrates
+
+- Managing multiple screens with Android Fragments
+- Defining navigation destinations and actions
+- Passing user-entered data between fragments
+- Connecting XML layouts with Data Binding
+- Handling navigation history with the back stack
+- Creating screen transitions and animations
+- Building an Android application with AndroidX and Jetpack libraries
 
 ## Author
-Sachin Jangir
 
-This project is maintained as a learning and development project focused on modern Android application development with Kotlin and Jetpack Compose.
+**Sachin Jangir**
+
+A learning and development project focused on Android application development with Kotlin, AndroidX, Fragments, and Jetpack libraries.
+
+
+
