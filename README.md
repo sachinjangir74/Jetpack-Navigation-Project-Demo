@@ -19,45 +19,25 @@ A modern Android application demonstrating Jetpack Navigation, Fragments, Data B
 ## Features
 - Splash screen navigation
 - Login screen with validation
-- Fragment-based navigation
-- Navigation Component
-- Safe Args
+- Jetpack Navigation Component
+- Safe Args for type-safe argument passing
 - Data passing between fragments
 - Data Binding
-- MVVM-oriented project structure
-- Custom fragment transitions and animations
+- MVVM-oriented architecture
+- Fragment animations
 - Back-stack navigation
 
 ## Navigation Flow
 Splash Screen -> Login -> Home -> Animation Fragment
-
-Back navigation:
-Animation Fragment -> Home
-
-## Modernization
-This project was upgraded from its original legacy Android configuration to a current Android development stack.
-
-- AGP 8.13.2 -> 9.4.0
-- Gradle 8.13 -> 9.6.0
-- Kotlin 2.3.0 -> 2.4.20-compatible AGP 9 setup
-- compileSdk 36 -> 37
-- targetSdk 32 -> 37
-- Java/JVM 8 -> 17
-- Navigation 2.4.2 -> 2.10.2
-- Lifecycle 2.4.x -> 2.11.0
-- Removed deprecated Jetifier configuration
-- Replaced deprecated bundleOf() usage
-- Updated Gradle property assignment syntax
-- Preserved Data Binding and navigation functionality
-- Verified build, installation, launch, navigation, and back-stack behavior on an Android emulator
+Back navigation: Animation Fragment -> Home
 
 ## Build
-On Windows:
-
-.\gradlew.bat assembleDebug
+On Windows: .\gradlew.bat assembleDebug
 
 ## Package
 com.sachin.jetpack_navigation_demo
 
 ## Author
 Sachin Jangir
+
+This project is maintained as a learning and development project focused on modern Android application development with Kotlin and Jetpack Compose.
